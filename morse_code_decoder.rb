@@ -45,3 +45,10 @@ def decode_char(char)
 end
 
 puts decode_char('-...')
+
+# Decode Morse code words
+def decode_word(word)
+  characters = word.split(' ')
+  characters.map { |char| char = decode_char(char) }.join
+end
+puts decode_word('.- -... -.-. -.. .')
