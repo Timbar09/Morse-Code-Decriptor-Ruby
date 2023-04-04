@@ -51,4 +51,13 @@ def decode_word(word)
   characters = word.split(' ')
   characters.map { |char| char = decode_char(char) }.join
 end
+
 puts decode_word('.- -... -.-. -.. .')
+
+# Decode a full sentence of words
+def decode_sentence(sentence)
+  words = sentence.split('  ')
+  words.map { |word| word = decode_word(word) }.join(' ')
+end
+
+puts decode_sentence('.-- .... .- - ...  ..- .--.')
