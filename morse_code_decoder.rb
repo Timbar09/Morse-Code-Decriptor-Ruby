@@ -45,6 +45,7 @@ def decode_char(char)
 end
 
 puts decode_char('-...')
+# => B
 
 # Decode Morse code words
 def decode_word(word)
@@ -53,6 +54,7 @@ def decode_word(word)
 end
 
 puts decode_word('.- -... -.-. -.. .')
+# => ABCDE
 
 # Decode a full sentence of words
 def decode_sentence(sentence)
@@ -61,3 +63,4 @@ def decode_sentence(sentence)
 end
 
 puts decode_sentence('.-- .... .- - ...  ..- .--.')
+# => WHATS UP
